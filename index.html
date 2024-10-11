@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Album Page</title>
+
+    <!-- Custom fonts and icons (similar to Spotify) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1DB954;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header section */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .album-art {
+            flex: 1;
+            max-width: 250px;
+            margin-right: 40px;
+        }
+
+        .album-info {
+            flex: 2;
+        }
+
+        .album-info h1 {
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        .album-info h2 {
+            font-size: 24px;
+            font-weight: 300;
+            color: #b3b3b3;
+        }
+
+        .album-info .play-button {
+            background-color: #1DB954;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            color: #fff;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .play-button:hover {
+            background-color: #17a846;
+        }
+
+        /* Tracklist section */
+        .tracklist {
+            margin-top: 30px;
+        }
+
+        .tracklist h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #b3b3b3;
+        }
+
+        .tracklist ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tracklist ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tracklist ul li .track-number {
+            font-weight: 600;
+        }
+
+        /* Artist Info section */
+        .artist-info {
+            margin-top: 50px;
+        }
+
+        .artist-info h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .artist-info p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #b3b3b3;
+        }
+
+        /* Reviews section */
+        .reviews {
+            margin-top: 50px;
+        }
+
+        .reviews h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .reviews .review {
+            background-color: #1f1f1f;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #1DB954;
+        }
+
+        .reviews .review p {
+            color: #b3b3b3;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: #b3b3b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header: Album Art + Info -->
+        <div class="header">
+            <img class="album-art" src="https://via.placeholder.com/250" alt="Album Art">
+            <div class="album-info">
+                <h1>Album Title</h1>
+                <h2>Artist Name</h2>
+                <a href="#" class="play-button"><i class="fas fa-play"></i> Play</a>
+            </div>
+        </div>
+
+        <!-- Tracklist Section -->
+        <div class="tracklist">
+            <h3>Tracklist</h3>
+            <ul>
+                <li>
+                    <span class="track-number">1. Song Title 1</span>
+                    <span class="duration">3:45</span>
+                </li>
+                <li>
+                    <span class="track-number">2. Song Title 2</span>
+                    <span class="duration">4:10</span>
+                </li>
+                <li>
+                    <span class="track-number">3. Song Title 3</span>
+                    <span class="duration">5:05</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Artist Information Section -->
+        <div class="artist-info">
+            <h3>About the Artist</h3>
+            <p>
+                The artist is known for their unique blend of electronic beats and indie-pop melodies. Having performed in
+                venues around the world, they have gathered a massive following with their catchy tunes and lyrical
+                depth.
+            </p>
+        </div>
+
+        <!-- Album Reviews Section -->
+        <div class="reviews">
+            <h3>Album Reviews</h3>
+            <div class="review">
+                <p>"A fantastic album that combines deep lyrics with energetic rhythms. A must-listen for fans of
+                    electronic
+                    music!"</p>
+            </div>
+            <div class="review">
+                <p>"The artist's best work yet. The production quality is top-notch, and every track is a masterpiece."
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            &copy; 2024 Music Album Page. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+
+</html>
