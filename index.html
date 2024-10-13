@@ -6,154 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Album Page</title>
 
-    <!-- Custom fonts and icons (similar to Spotify) -->
+    <!-- Spotify Favicon -->
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"/>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom fonts and icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #121212;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1, h2, h3, h4, p {
-            margin: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #1DB954;
-        }
-
-        /* Container */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header section */
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 50px;
-        }
-
-        .album-art {
-            flex: 1;
-            max-width: 250px;
-            margin-right: 40px;
-        }
-
-        .album-info {
-            flex: 2;
-        }
-
-        .album-info h1 {
-            font-size: 48px;
-            font-weight: 600;
-        }
-
-        .album-info h2 {
-            font-size: 24px;
-            font-weight: 300;
-            color: #b3b3b3;
-        }
-
-        .album-info .play-button {
-            background-color: #1DB954;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 18px;
-            color: #fff;
-            margin-top: 20px;
-            display: inline-block;
-        }
-
-        .play-button:hover {
-            background-color: #17a846;
-        }
-
-        /* Tracklist section */
-        .tracklist {
-            margin-top: 30px;
-        }
-
-        .tracklist h3 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #b3b3b3;
-        }
-
-        .tracklist ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .tracklist ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #333;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .tracklist ul li .track-number {
-            font-weight: 600;
-        }
-
-        /* Artist Info section */
-        .artist-info {
-            margin-top: 50px;
-        }
-
-        .artist-info h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-
-        .artist-info p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #b3b3b3;
-        }
-
-        /* Reviews section */
-        .reviews {
-            margin-top: 50px;
-        }
-
-        .reviews h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-
-        .reviews .review {
-            background-color: #1f1f1f;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            border-left: 5px solid #1DB954;
-        }
-
-        .reviews .review p {
-            color: #b3b3b3;
-            line-height: 1.6;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #1f1f1f;
-            color: #b3b3b3;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -161,11 +23,11 @@
     <div class="container">
         <!-- Header: Album Art + Info -->
         <div class="header">
-            <img class="album-art" src="https://via.placeholder.com/250" alt="Album Art">
+            <a href="https://github.com/Zeeb0-0/Sample-Music-Album-Page"><img class="album-art" src="Images/WhatDoYouReallyKnow-RealityClub.jfif" alt="Album Art"></a>
             <div class="album-info">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
-                <a href="#" class="play-button"><i class="fas fa-play"></i> Play</a>
+                <h1>What Do You Really Know?</h1>
+                <h2>Reality Club</h2>
+                <a href="https://open.spotify.com/album/7gOhCvJD152GWf16fhs7Gp" class="play-button"><i class="fas fa-play"></i> Play</a>
             </div>
         </div>
 
@@ -174,16 +36,48 @@
             <h3>Tracklist</h3>
             <ul>
                 <li>
-                    <span class="track-number">1. Song Title 1</span>
-                    <span class="duration">3:45</span>
+                    <a href="https://open.spotify.com/track/3jgdDoBxslxQ3iZKJPto9b?si=fe2acd468294428a"><span class="track-number">1.</span><span class="track-name">Prologue</span></a>
+                    <span class="duration">1:11</span>
                 </li>
                 <li>
-                    <span class="track-number">2. Song Title 2</span>
-                    <span class="duration">4:10</span>
+                    <a href="https://open.spotify.com/track/2V3uKLeEuAWgCrcEU2LIr7?si=1772bc4ccdd24f9f"><span class="track-number">2.</span><span class="track-name">SSR</span></a>
+                    <span class="duration">4:01</span>
                 </li>
                 <li>
-                    <span class="track-number">3. Song Title 3</span>
-                    <span class="duration">5:05</span>
+                    <a href="https://open.spotify.com/track/4wRuPQzC4GstgiLxM32t50?si=eeba67ffc18c415f"><span class="track-number">3.</span><span class="track-name">All Along Things Were Wrong</span></a>
+                    <span class="duration">2:07</span>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/track/4slrUaruV9Tg4irapk3Utr?si=a133e538434b4766"><span class="track-number">4.</span><span class="track-name">Caught in a Trap</span></a>
+                    <span class="duration">5:47</span>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/track/4PB8QBM0OWhck5ywU1O1zI?si=dd61c61a3e7f44b3"><span class="track-number">5.</span><span class="track-name">The Rush</span></a>
+                    <span class="duration">3:30</span>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/track/6I3i2Hn2qHI103tFwgOZ4l?si=64878628ec2648f8"><span class="track-number">6.</span><span class="track-name">Vita o morte</span></a>
+                    <span class="duration">3:52</span>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/track/67YVZ8XKist6XE3Usm0cZt?si=b5d9b865a4f44d59"><span class="track-number">7.</span><span class="track-name">Telenovia</span></a>
+                    <span class="duration">5:21</span>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/track/2YqIQ8ug69xue7phIhLBYP?si=4dbda310ff264fb3"><span class="track-number">8.</span><span class="track-name">On My Own, Again</span></a>
+                    <span class="duration">3:43</span>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/track/6ZGgaShxOimGDfRz1T1zje?si=50257edddf394e5d"><span class="track-number">9.</span><span class="track-name">Alexandra</span></a>
+                    <span class="duration">3:58</span>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/track/1aoN2IqlLDCqbeqLylN7BQ?si=df2a676ec5cc49a6"><span class="track-number">10.</span><span class="track-name">A Sorrowful Reunion</span></a>
+                    <span class="duration">4:19</span>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/track/5Gxwk3TSekI4GVMpFvPBEc?si=f1420e2a317b4b24"><span class="track-number">11.</span><span class="track-name">2112</span></a>
+                    <span class="duration">5:56</span>
                 </li>
             </ul>
         </div>
@@ -192,9 +86,7 @@
         <div class="artist-info">
             <h3>About the Artist</h3>
             <p>
-                The artist is known for their unique blend of electronic beats and indie-pop melodies. Having performed in
-                venues around the world, they have gathered a massive following with their catchy tunes and lyrical
-                depth.
+                Take an indie–rock band and inject it with a firm attitude and catchy phrases, that's Reality Club for you.<br><br>Established in late 2016, Reality Club is an AMI (Anugerah Musik Indonesia) awards winner for Best Alternative Album of 2023 and Best Alternative Group of 2023 (for “Reality Club Presents…”) and nominee for best newcomer of 2018 and best alternative group of 2018, 2020, 2021, and 2022. Formed in Jakarta, they have been ever-growing and catching people's eyes and ears since their first release. They are Era Patigo on drums, Faiz Novascotia Saripudin on vocals and guitar, Fathia Izzati on vocals and keys, and Nugi Wicaksono on bass. They have started their expansion through Asia in 2019, playing in Tokyo, Malaysia, Jeddah, Singapore, and was even scheduled for South By Southwest in Austin, Texas, 2020. They have also recently completed an Online World Tour, playing in online festivals for the UK, Germany, Singapore, and the USA crowd.<br><br>Recently, from October through to December of 2023, Reality Club successfully held their third album tour titled "Reality Club Presents... the Asia Tour" which included Singapore, Thailand, Taiwan, Malaysia, Philippines, and a solo concert at Balai Sarbini, Jakarta, Indonesia. This solo concert featured a semi-theatrical concept featuring dancers, a choir, and an orchestra which successfully captivated more than 1,300 audiences for a truly unforgettable night for everyone in attendance and marking a momentous achievement for the band.
             </p>
         </div>
 
@@ -202,13 +94,13 @@
         <div class="reviews">
             <h3>Album Reviews</h3>
             <div class="review">
-                <p>"A fantastic album that combines deep lyrics with energetic rhythms. A must-listen for fans of
-                    electronic
-                    music!"</p>
+                <p>"Reality club is not by any means original as they've shown at least on this album in particular a huge arctic monkeys influence, but in my opinion since they've successfully added their on twist on this style of indie rock and doing it justice there's nothing really to complain about how unoriginal they are, hell I might even prefer this album to some of arctic monkeys albums just because this album is that damn good."</p>
             </div>
             <div class="review">
-                <p>"The artist's best work yet. The production quality is top-notch, and every track is a masterpiece."
-                </p>
+                <p>"Reality Club is a name that will always be memorable to me. They are the first band that I saw live. And I think I will never feel the same way as that day. Two speaker booming beside my ear, while the whole crowd is screaming beside my other ear. Everything is just the PERFECT amount of awfulness. In fact, I recorded ALL one hour of it :)"</p>
+            </div>
+            <div class="review">
+                <p>"A glimpse of hope. This album is fantastic. I love every part of it."</p>
             </div>
         </div>
 
